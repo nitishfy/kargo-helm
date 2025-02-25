@@ -29,14 +29,13 @@ spec:
           - branch: main
             path: ./out
 
-      - uses: helm-update-image
+      - uses: yaml-update
         as: update-image
         config:
           path: ./out/env/dev/values.yaml
-          images:
-          - image: ghcr.io/nitishfy/guestbook
-            key: image.tag
-            value: Tag
+          updates:
+          - key: image.tag
+            value: ${{ imageFrom("ghcr.io/nitishfy/guestbook").Tag }}
 
       - uses: copy
         config:
