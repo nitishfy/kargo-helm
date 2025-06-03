@@ -16,10 +16,11 @@ metadata:
   name: features
   namespace: kargo-helm
 spec:
+  interval: 30m
   subscriptions:
   - git:
       branch: main
-      commitSelectionStrategy: NewestFromBranch
+      strictSemvers: false
       discoveryLimit: 20
       repoURL: https://github.com/nitishfy/kargo-helm.git
       includePaths:
