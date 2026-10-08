@@ -6,9 +6,9 @@ metadata:
 spec:
   vars:
   - name: image
-    value: ghcr.io/jessesuen/guestbook
+    value: ghcr.io/nitishfy/guestbook
   - name: repoURL
-    value: https://github.com/jessesuen/kargo-helm.git
+    value: https://github.com/nitishfy/kargo-helm.git
   - name: branch
     value: main
 
