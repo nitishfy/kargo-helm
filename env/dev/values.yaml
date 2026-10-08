@@ -1,5 +1,5 @@
 image:
-  tag: v0.0.89
+  tag: v0.0.1
 
 replicaCount: 1
 example.com/version: "v.1.0.0."
